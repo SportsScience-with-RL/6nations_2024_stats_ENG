@@ -36,7 +36,7 @@ def stat_navigation(data_6nations, teams_img, games_scores, games_results, tbl_t
     
     if stat_menu == 'Games comparison':
         with st.expander('Approach'):
-            st.subheader('**:blue[Two teams comparison for the all game]**')
+            st.subheader('**:blue[Two teams comparison for the full game]**')
             st.write("""A Shapiro-Wilk test is performed for each team to test the null hypothesis that the values of the variable are normally distributed.
                      A Levene test is also carried out in order to test the null hypothesis of homogeneity of variances between the two teams for the chosen variable.""")
             st.write("""For a p-value of the Shapiro-Wilk test below the 95% threshold, we reject the null hypothesis: the team variable does not seem to follow a normal distribution.
@@ -91,7 +91,7 @@ def stat_navigation(data_6nations, teams_img, games_scores, games_results, tbl_t
 
     elif stat_menu == "Team comparison":
         with st.expander('Approach'):
-            st.subheader('**:blue[Two teams comparison for each 20min period for each game]**')
+            st.subheader('**:blue[Same team comparison over the competition for full games and 20min periods]**')
             st.write("""A Shapiro-Wilk test is performed for each team period to test the null hypothesis that the values of the variable for each game/period are normally distributed.
               A Levene test is also carried out in order to test the null hypothesis of homogeneity of variances between games/periods for the chosen variable.""")
             st.write("""For a p-value of the Shapiro-Wilk test below the 95% threshold, we reject the null hypothesis: the variable does not seem to follow a normal distribution for the game/period.
